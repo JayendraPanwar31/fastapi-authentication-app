@@ -1,0 +1,81 @@
+Registration
+      ↓
+Data stored in app.db
+      ↓
+Login
+      ↓
+Password hash verification
+      ↓
+Session created
+      ↓
+Welcome page
+      ↓
+Logout (with CSRF token)
+      ↓
+Session cleared
+
+
+# Project Structure
+project/
+│
+├── database.py
+├── main.py
+├── models.py
+├── requirements.txt
+├── app.db
+│
+└── templates/
+    ├── registration.html
+    ├── login.html
+    └── welcome.html
+
+#Technologies Used
+FastAPI
+SQLAlchemy
+SQLite
+Jinja2
+Passlib (bcrypt)
+SessionMiddleware
+Pydantic
+
+>>pip install -r requirements.txt
+
+If you've already installed everything in your virtual environment:
+>>pip freeze > requirements.txt
+
+#Exception Handaling
+Request
+   ↓
+Middleware Executes
+   ↓
+Route Matching
+   ↓
+Route Not Found
+   ↓
+404 Exception Raised
+   ↓
+custom_http_exception_handler()
+   ↓
+404.html Returned
+
+# After this project:
+SQLite
+   ↓
+SQLAlchemy ORM
+   ↓
+Password Hashing (bcrypt)
+   ↓
+Sessions
+   ↓
+CSRF Protection
+   ↓
+Alembic Migrations
+   ↓
+PostgreSQL
+   ↓
+JWT Authentication
+   ↓
+Role-Based Access (RBAC)
+   ↓
+Docker
+

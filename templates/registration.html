@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+</head>
+<body>
+
+    <h1>Registration Page</h1>
+
+    <form action="/register_user" method="POST">
+
+        <p>Name</p>
+        <input
+            type="text"
+            name="name"
+            required
+        >
+
+        <p>Email</p>
+        <input
+            type="email"
+            name="email"
+            required
+        >
+
+        <p>Password</p>
+        <input
+            type="password"
+            name="password"
+            required
+        >
+
+        <br><br>
+
+        <button type="submit">
+            Register
+        </button>
+
+    </form>
+
+    <br>
+
+    <a href="/login/">
+        Already have an account?
+    </a>
+
+</body>
+</html>

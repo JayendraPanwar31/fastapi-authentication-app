@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+</head>
+<body>
+
+    <h1>
+        Welcome {{ username }}
+    </h1>
+
+    <form action="/logout" method="post">
+
+        <input
+            type="hidden"
+            name="csrf_token"
+            value="{{ csrf_token }}"
+        >
+
+        <button type="submit">
+            Logout
+        </button>
+
+    </form>
+
+</body>
+</html>
